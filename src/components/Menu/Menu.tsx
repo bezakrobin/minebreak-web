@@ -3,7 +3,7 @@ import { MenuButton } from '../Button/MenuButton/MenuButton';
 import { MenuItem } from "../../types/types";
 import { useLocation } from 'react-router-dom';
 import {Spacing} from "../Spacing/Spacing";
-import {copyServerLink} from "../../functions/copyServerLink";
+import { useCopyServerLink } from '../../functions/useCopyServerLink';
 
 type MenuProps = {
     menuItems: MenuItem[];
@@ -13,6 +13,7 @@ type MenuProps = {
 
 export const Menu: React.FC<MenuProps> = ({ menuItems, menuItemDiscord, menuItemServerLink }) => {
     const location = useLocation();
+    const copyServerLink = useCopyServerLink();
     const menuStyle: React.CSSProperties = {
         justifyContent: 'space-between',
         alignItems: 'center',
