@@ -1,6 +1,7 @@
-import {MenuItem, VideoItem} from "../types/types";
+import {ImageItem, MenuItem, VideoItem} from "../types/types";
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 import videoSrc from "../video/background.mp4";
+import fallbackImageSrc from "../images/minebreak_logo_PNG_8000x4500px.png";
 
 export const menuItems: MenuItem[] = [
     { label: 'HOME', onHoverBackgroundColor: '#B43131', backgroundColor: 'transparent', color: '#fff', path: '/' },
@@ -19,4 +20,8 @@ export const menuItemServerLink: MenuItem = {
 
 export const heroVideo: VideoItem = {
     video: videoSrc
+}
+
+export const heroImage: ImageItem = {
+    image: fallbackImageSrc
 }

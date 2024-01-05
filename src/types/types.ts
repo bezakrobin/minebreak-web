@@ -13,3 +13,7 @@ export type MenuItem = {
 export type VideoItem = {
     video: string;
 }
+
+export type ImageItem = {
+    image: string;
+}
