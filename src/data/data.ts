@@ -1,5 +1,6 @@
-import {MenuItem} from "../types/types";
+import {MenuItem, VideoItem} from "../types/types";
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
+import videoSrc from "../video/background.mp4";
 
 export const menuItems: MenuItem[] = [
     { label: 'HOME', onHoverBackgroundColor: '#B43131', backgroundColor: 'transparent', color: '#fff', path: '/' },
@@ -14,4 +15,8 @@ export const menuItemDiscord: MenuItem = {
 
 export const menuItemServerLink: MenuItem = {
     label: 'PLAY.MINEBREAK.CZ', onHoverBackgroundColor: '#B43131', backgroundColor: '#902325', color: '#fff', path: 'play.minebreak.cz'
+}
+
+export const heroVideo: VideoItem = {
+    video: videoSrc
 }

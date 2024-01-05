@@ -9,3 +9,7 @@ export type MenuItem = {
     path?: string;
     newTab?: boolean;
 };
+
+export type VideoItem = {
+    video: string;
+}
