@@ -31,6 +31,7 @@ const imageStyle: React.CSSProperties = {
     zIndex: -1,
     transform: 'translate(-50%, -50%)',
     objectFit: 'cover',
+    opacity: 0,
 };
 
 const vignetteStyle: React.CSSProperties = {
@@ -47,6 +48,7 @@ export const Hero: React.FC<HeroProps> = ({video, image}) => {
     const [videoError, setVideoError] = useState(false);
     const [videoContainerTopOffset, setVideoContainerTopOffset] = useState('-200px');
     const videoRef = useRef<HTMLVideoElement>(null);
+    const imageRef = useRef<HTMLImageElement>(null);
 
     const videoContainerStyle: React.CSSProperties = {
         position: 'relative',
@@ -88,6 +90,15 @@ export const Hero: React.FC<HeroProps> = ({video, image}) => {
         };
     }, []);
 
+    useEffect(() => {
+        if (videoError && imageRef.current) {
+            gsap.to(imageRef.current, {
+                opacity: 1,
+                duration: 2
+            });
+        }
+    }, [videoError]);
+
     return (
         <div style={videoContainerStyle}>
             {!videoError ? (
@@ -95,7 +106,7 @@ export const Hero: React.FC<HeroProps> = ({video, image}) => {
                     <source src={video.video} type="video/mp4" />
                 </video>
             ) : (
-                <img src={image.image} style={imageStyle} alt="Fallback" />
+                <img ref={imageRef} src={image.image} style={imageStyle} alt="Fallback" />
             )}
             <div style={vignetteStyle} />
         </div>

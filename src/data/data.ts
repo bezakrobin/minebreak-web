@@ -8,6 +8,7 @@ export const menuItems: MenuItem[] = [
     { label: 'BLOG', onHoverBackgroundColor: '#B43131', backgroundColor: 'transparent', color: '#fff', path: '/blog' },
     { label: 'GUIDES', onHoverBackgroundColor: '#B43131', backgroundColor: 'transparent', color: '#fff', path: '/guides' },
     { label: 'STORE', onHoverBackgroundColor: '#B43131', backgroundColor: 'transparent', color: '#fff', path: '/store' },
+    { label: 'RECRUITMENT', onHoverBackgroundColor: '#B43131', backgroundColor: 'transparent', color: '#fff', path: '/recruitment' },
 ];
 
 export const menuItemDiscord: MenuItem = {
