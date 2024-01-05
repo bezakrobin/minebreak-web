@@ -37,7 +37,10 @@ const vignetteStyle: React.CSSProperties = {
     left: 0,
     right: 0,
     bottom: 0,
-    background: 'radial-gradient(ellipse at center, transparent 10%, black 80%)',
+    background: `
+        radial-gradient(ellipse at center, transparent 10%, black 80%),
+        linear-gradient(to top, black, transparent 20%)
+    `,
     zIndex: 1,
 };
 
