@@ -17,3 +17,8 @@ export type VideoItem = {
 export type ImageItem = {
     image: string;
 }
+
+export type NewsItem = {
+    title: string;
+    subtitle: string;
+}

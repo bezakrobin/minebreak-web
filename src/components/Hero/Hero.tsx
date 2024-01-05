@@ -24,13 +24,10 @@ const imageStyle: React.CSSProperties = {
     position: 'absolute',
     top: '50%',
     left: '50%',
-    minWidth: '100%',
-    minHeight: '100%',
     width: '20%',
     height: '20%',
     zIndex: -1,
     transform: 'translate(-50%, -50%)',
-    objectFit: 'cover',
     opacity: 0,
 };
 
@@ -74,7 +71,7 @@ export const Hero: React.FC<HeroProps> = ({video, image}) => {
                     duration: 5,
                     onComplete: () => {
                         setVideoError(true);
-                        setVideoContainerTopOffset('-50px');
+                        setVideoContainerTopOffset('-100px');
                     }
                 });
             }
@@ -106,7 +103,7 @@ export const Hero: React.FC<HeroProps> = ({video, image}) => {
                     <source src={video.video} type="video/mp4" />
                 </video>
             ) : (
-                <img ref={imageRef} src={image.image} style={imageStyle} alt="Fallback" />
+                <img ref={imageRef} src={image.image} style={imageStyle} alt="FallbackBackgroundImage" />
             )}
             <div style={vignetteStyle} />
         </div>

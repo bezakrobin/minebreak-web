@@ -1,7 +1,7 @@
-import {ImageItem, MenuItem, VideoItem} from "../types/types";
+import {ImageItem, MenuItem, NewsItem, VideoItem} from "../types/types";
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 import videoSrc from "../video/background.mp4";
-import fallbackImageSrc from "../images/minebreak_logo_PNG_8000x4500px.png";
+import fallbackImageSrc from "../images/minebreak_logo_PNG_1642x1113px.png";
 
 export const menuItems: MenuItem[] = [
     { label: 'HOME', onHoverBackgroundColor: '#B43131', backgroundColor: 'transparent', color: '#fff', path: '/' },
@@ -12,17 +12,31 @@ export const menuItems: MenuItem[] = [
 ];
 
 export const menuItemDiscord: MenuItem = {
-    icon: faDiscord, onHoverBackgroundColor: '#6773F4', backgroundColor: '#7289DA', color: '#fff', path: 'https://discord.com/invite/pPQZ3vZ', newTab: true
+    icon: faDiscord,
+    onHoverBackgroundColor: '#6773F4',
+    backgroundColor: '#7289DA',
+    color: '#fff',
+    path: 'https://discord.com/invite/pPQZ3vZ',
+    newTab: true,
 }
 
 export const menuItemServerLink: MenuItem = {
-    label: 'PLAY.MINEBREAK.CZ', onHoverBackgroundColor: '#B43131', backgroundColor: '#902325', color: '#fff', path: 'play.minebreak.cz'
+    label: 'PLAY.MINEBREAK.CZ',
+    onHoverBackgroundColor: '#B43131',
+    backgroundColor: '#902325',
+    color: '#fff',
+    path: 'play.minebreak.cz',
 }
 
 export const heroVideo: VideoItem = {
-    video: videoSrc
+    video: videoSrc,
 }
 
 export const heroImage: ImageItem = {
-    image: fallbackImageSrc
+    image: fallbackImageSrc,
+}
+
+export const recentPostHeadline: NewsItem = {
+    title: 'MineBreak News',
+    subtitle: 'Stay up to date with the latest blogs & updates!',
 }

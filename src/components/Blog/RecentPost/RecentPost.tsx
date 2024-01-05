@@ -1,11 +1,17 @@
 import React from "react";
+import {NewsItem} from "../../../types/types";
 
-export const RecentPost: React.FC = () => {
+type RecentPostProps = {
+    recentPostHeadline: NewsItem;
+}
+
+export const RecentPost: React.FC<RecentPostProps> = ({recentPostHeadline}) => {
     const containerStyle: React.CSSProperties = {
         backgroundColor: 'transparent',
         color: '#fff',
         padding: '20px',
         textAlign: 'center',
+        marginTop: '-200px',
     };
 
     const titleStyle: React.CSSProperties = {
@@ -20,8 +26,8 @@ export const RecentPost: React.FC = () => {
 
     return (
         <div style={containerStyle}>
-            <div style={titleStyle}>MineBreak News</div>
-            <div style={subtitleStyle}>Stay up to date with the latest blogs & updates!</div>
+            <div style={titleStyle}>{recentPostHeadline.title}</div>
+            <div style={subtitleStyle}>{recentPostHeadline.subtitle}</div>
         </div>
     );
 };
