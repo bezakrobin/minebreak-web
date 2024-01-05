@@ -20,6 +20,19 @@ const videoStyle: React.CSSProperties = {
     objectFit: 'cover',
 };
 
+const imageStyle: React.CSSProperties = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    minWidth: '100%',
+    minHeight: '100%',
+    width: '20%',
+    height: '20%',
+    zIndex: -1,
+    transform: 'translate(-50%, -50%)',
+    objectFit: 'cover',
+};
+
 const vignetteStyle: React.CSSProperties = {
     position: 'absolute',
     top: 0,
@@ -82,7 +95,7 @@ export const Hero: React.FC<HeroProps> = ({video, image}) => {
                     <source src={video.video} type="video/mp4" />
                 </video>
             ) : (
-                <img src={image.image} style={videoStyle} alt="Fallback" />
+                <img src={image.image} style={imageStyle} alt="Fallback" />
             )}
             <div style={vignetteStyle} />
         </div>
