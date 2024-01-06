@@ -1,7 +1,7 @@
 import {ImageItem, MenuItem, NewsItem, PostItem, VideoItem} from "../types/types";
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 import videoSrc from "../video/background.mp4";
-import fallbackImageSrc from "../images/minebreak_logo_PNG_1642x1113px.png";
+import fallbackImageSrc from "../images/fallbackImage.jpg";
 import postThumbnail from "../images/postThumbnail.jpg";
 
 export const menuItems: MenuItem[] = [
