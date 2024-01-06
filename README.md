@@ -25,3 +25,19 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 #### SNACKBAR:
 
 ![snackbar.png](src/readme/snackbar.png)
+
+#### HERO VIDEO:
+
+![heroVideo.png](src/readme/heroVideo.png)
+
+#### HERO IMAGE:
+
+![heroImage.png](src/readme/heroImage.png)
+
+#### NEWS:
+
+![news.png](src/readme/news.png)
+
+#### RECENT BLOG POST:
+
+![recentPost.png](src/readme/recentPost.png)
