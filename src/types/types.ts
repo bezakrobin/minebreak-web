@@ -22,3 +22,11 @@ export type NewsItem = {
     title: string;
     subtitle: string;
 }
+
+export type PostItem = {
+    title: string;
+    type: string;
+    date: string;
+    text: string;
+    thumbnail: string;
+}

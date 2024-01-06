@@ -1,7 +1,8 @@
-import {ImageItem, MenuItem, NewsItem, VideoItem} from "../types/types";
+import {ImageItem, MenuItem, NewsItem, PostItem, VideoItem} from "../types/types";
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 import videoSrc from "../video/background.mp4";
 import fallbackImageSrc from "../images/minebreak_logo_PNG_1642x1113px.png";
+import postThumbnail from "../images/postThumbnail.jpg";
 
 export const menuItems: MenuItem[] = [
     { label: 'HOME', onHoverBackgroundColor: '#B43131', backgroundColor: 'transparent', color: '#fff', path: '/' },
@@ -39,4 +40,15 @@ export const heroImage: ImageItem = {
 export const recentPostHeadline: NewsItem = {
     title: 'MineBreak News',
     subtitle: 'Stay up to date with the latest blogs & updates!',
+}
+
+export const recentPost: PostItem = {
+    title: 'Three Years With Origin Realms',
+    type: 'Update',
+    date: 'Jan 4th, 2024',
+    text: 'It\'s hard to believe, but we\'ve just completed our third year at Origin Realms!\n' +
+          'This journey, filled with many challenges and wins, has been incredible thanks to\n' +
+          'our amazing community. The Origin Realms players are truly what makes this the\n' +
+          'best Minecraft server available and we thank you for being ...',
+    thumbnail: postThumbnail,
 }
