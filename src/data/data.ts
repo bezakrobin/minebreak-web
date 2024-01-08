@@ -1,7 +1,7 @@
 import {ImageItem, MenuItem, NewsItem, PostItem, VideoItem} from "../types/types";
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 import videoSrc from "../video/background.mp4";
-import fallbackImageSrc from "../images/fallbackImage.jpg";
+import fallbackImageSrc from "../images/fallbackImage.png";
 import postThumbnail from "../images/postThumbnail.jpg";
 
 export const menuItems: MenuItem[] = [
